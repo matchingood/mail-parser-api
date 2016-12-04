@@ -1,0 +1,28 @@
+{
+  "name": "mail-parser-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matchingood/mail-parser-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matchingood/mail-parser-api/issues"
+  },
+  "homepage": "https://github.com/matchingood/mail-parser-api#readme",
+  "dependencies": {
+    "aws-sdk": "^2.7.10",
+    "iconv": "^2.2.1",
+    "jconv": "^0.1.5",
+    "mailparser": "^0.6.1"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.5.4"
+  }
+}
