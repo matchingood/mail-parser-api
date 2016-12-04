@@ -17,6 +17,7 @@ functions:
           path: parse
           method: post
           integration: lambda
+          private: true
           request:
             template:
               application/json: >
