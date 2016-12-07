@@ -11,8 +11,8 @@ module.exports.parse = (event, context, callback) => {
     const response = {
       from: mail.from,
       to: mail.to,
-      bcc: mail.bcc,
-      cc: mail.cc,
+      bcc: mail.bcc == undefined ? [] : mail.bcc,
+      cc: mail.cc == undefined ? [] : mail.cc,
       subject: mail.subject,
       html: mail.html,
       date: mail.date.toJSON()
