@@ -9,12 +9,12 @@ module.exports.parse = (event, context, callback) => {
 
   parser.on('end', (mail) => {
     const response = {
-      from: mail.from,
-      to: mail.to,
+      from: mail.from[0],
+      to: mail.to[0],
       bcc: mail.bcc == undefined ? [] : mail.bcc,
       cc: mail.cc == undefined ? [] : mail.cc,
       subject: mail.subject,
-      html: mail.html,
+      html: mail.html == undefined ? mail.text : mail.html,
       date: mail.date.toJSON()
     }
     callback(null, response)
